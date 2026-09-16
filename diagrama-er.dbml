@@ -1,0 +1,29 @@
+Table moneda {
+  currency_id int [pk, increment]
+  currency_name varchar(50) [not null, unique]
+  currency_symbol varchar(10) [not null]
+}
+
+Table usuario {
+  user_id int [pk, increment]
+  nombre varchar(100) [not null]
+  email varchar(150) [not null, unique]
+  password_hash varchar(255) [not null]
+  saldo decimal(15,2) [not null, default: 0]
+  currency_id int [not null]
+  fecha_creacion timestamp [not null]
+}
+
+Table transaccion {
+  transaction_id int [pk, increment]
+  sender_user_id int [not null]
+  receiver_user_id int [not null]
+  currency_id int [not null]
+  amount decimal(15,2) [not null]
+  transaction_date timestamp [not null]
+}
+
+Ref: usuario.currency_id > moneda.currency_id
+Ref: transaccion.sender_user_id > usuario.user_id
+Ref: transaccion.receiver_user_id > usuario.user_id
+Ref: transaccion.currency_id > moneda.currency_id
