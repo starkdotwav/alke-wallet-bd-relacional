@@ -74,7 +74,7 @@ INSERT INTO usuario (nombre, email, password_hash, saldo, currency_id) VALUES
 INSERT INTO transaccion (sender_user_id, receiver_user_id, currency_id, amount) VALUES
     (1, 2, 1, 25000.00),
     (2, 3, 1, 15000.00),
-    (1, 4, 2, 100.00);
+    (1, 4, 1, 10000.00);
 
 -- Consulta: moneda elegida por un usuario específico
 SELECT
