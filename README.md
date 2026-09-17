@@ -30,6 +30,16 @@ Diseñar e implementar una base de datos relacional para una billetera virtual. 
 
 La tabla `transaccion` contiene dos claves foráneas hacia `usuario`: `sender_user_id` para el emisor y `receiver_user_id` para el receptor.
 
+## Diagrama entidad-relación
+
+El diagrama ER se encuentra disponible en dbdiagram.io:
+
+[Ver diagrama ER de Alke Wallet](https://dbdiagram.io/d/6aab2fbbfe722b4a3911fad1)
+
+<iframe width="560" height="315" src="https://dbdiagram.io/e/6aab2fbbfe722b4a3911fad1/6aab3018fe722b4a3911fdb2"></iframe>
+
+> Nota: GitHub puede no mostrar el iframe por seguridad. El enlace anterior permite abrir el diagrama directamente.
+
 ## Estructura del repositorio
 
 ```text
