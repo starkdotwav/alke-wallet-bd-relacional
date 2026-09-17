@@ -34,11 +34,9 @@ La tabla `transaccion` contiene dos claves foráneas hacia `usuario`: `sender_us
 
 El diagrama ER se encuentra disponible en dbdiagram.io:
 
-[Ver diagrama ER de Alke Wallet](https://dbdiagram.io/d/6aab2fbbfe722b4a3911fad1)
+[Ver diagrama ER de Alke Wallet](https://dbdiagram.io/d/https-github-com-marcelstark-alke-wallet-bd-relacional-6aab2fbbfe722b4a3911fad1)
 
-<iframe width="560" height="315" src="https://dbdiagram.io/e/6aab2fbbfe722b4a3911fad1/6aab3018fe722b4a3911fdb2"></iframe>
-
-> Nota: GitHub puede no mostrar el iframe por seguridad. El enlace anterior permite abrir el diagrama directamente.
+> El código fuente del modelo se encuentra en el archivo `diagrama-er.dbml` de este repositorio.
 
 ## Estructura del repositorio
 
